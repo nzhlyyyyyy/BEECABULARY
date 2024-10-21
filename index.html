@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEECABULARY</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="images/logo-bee.png" alt="Bee Logo" class="bee-logo">
+        <h1>CLUES</h1>
+        <div id="clue"></div>
+        <input type="text" id="guessInput" placeholder="Enter your 5-letter guess" maxlength="5" readonly>
+        <button id="submitBtn">Submit</button>
+        <div id="feedback"></div>
+        <div id="attempts"></div>
+        <div id="keyboard"></div>
+        <button id="nextBtn">Next</button>
+        <h1 id="nextdesc">This button changes the word you're going to guess &#8594; </h1>
+        
+        <div>
+            <button class="tutorial-button" onclick="location.href='tutorial.html'">Info and Tutorial</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box; /* Add box-sizing for consistent layout */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Background color of the page */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;          /* Full viewport height */
+    margin: 0;              /* Remove default margin */
+}
+
+.container {
+    background: rgb(218, 149, 149); /* Background color for the container */
+    padding: 20px;     /* Inner padding for the container */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text */
+    width: 470px; /* Fixed width for the container */
+    max-width: 100%; /* Responsive design */
+    height: 590px;
+}
+
+h1 {
+    color: #eeece7; /* Yellow color for the title */
+    text-shadow: 
+        -1px -1px 0px #000000,  /* Top left */
+        1px -1px 0px #000000,   /* Top right */
+        -1px 1px 0px #000000,   /* Bottom left */
+        1px 1px 0px #000000,    /* Bottom right */
+        0px 0px 5px #ffffff;    /* White glow */
+    font-size: 25px; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Space below the logo */
+}
+
+.bee-logo {
+    width: 430px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: -40px; /* Space below the logo */
+    margin-top: -40px;
+}
+
+#guessInput {
+    padding: 10px; /* Inner padding for input */
+    margin: 10px 0; /* Margin for spacing */
+    font-size: 16px; /* Font size for input */
+}
+
+button {
+    padding: 10px 15px; /* Inner padding for button */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #fdcb01; /* Button color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+#feedback {
+    margin-top: 10px; /* Space above feedback */
+    font-size: 18px; /* Font size for feedback */
+    font-weight: bold; /* Bold text for feedback */
+}
+
+#attempts {
+    margin-top: 10px; /* Space above attempts display */
+    font-size: 16px; /* Font size for attempts */
+}
+
+#keyboard {
+    margin-top: 20px; /* Space above keyboard */
+    display: flex; /* Use flexbox for keyboard layout */
+    flex-direction: column; /* Arrange keys vertically */
+    align-items: center; /* Center align the keys */
+}
+
+.keyboard-row {
+    display: flex; /* Use flexbox for each row of keys */
+    justify-content: center; /* Center align the row */
+    margin: 5px 0; /* Margin for spacing between rows */
+}
+
+.key {
+    display: inline-block; /* Inline block for keys */
+    width: 40px; /* Fixed width for keys */
+    height: 40px; /* Fixed height for keys */
+    margin: 2px; /* Margin for spacing between keys */
+    background-color: #ffcc00; /* Key color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for keys */
+    font-size: 18px; /* Font size for key text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.key:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+#nextBtn {
+    position: absolute;
+    right: 30px; /* Adjust this value to move the button left or right */
+    top: 50%; /* This will vertically center the button */
+    transform: translateY(-50%); /* This will vertically align it perfectly */
+    padding: 10px 20px; /* Optional: add some padding to the button */
+    font-size: 16px; /* Optional: set the button text size */
+    background-color:#c7432c ;
+}
+
+#nextdesc {
+    position: absolute;
+    right: 120px; /* Adjust this value to move the button left or right */
+    top: 49%; /* This will vertically center the button */
+    transform: translateY(-50%); /* This will vertically align it perfectly */
+    padding: 10px 10px; /* Optional: add some padding to the button */
+    font-size: 11px; /* Optional: set the button text size */
+    background-color:#b14430 ;
+}
+
+.key {
+    display: inline-block;
+    width: 40px; /* Same width as other keys */
+    height: 40px;
+    margin: 2px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.key:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+.tutorial-button {
+    position: absolute; /* Position relative to the container */
+    top: 20px; /* Adjust the top distance as needed */
+    right: 20px; /* Adjust the right distance as needed */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+}
+
+.tutorial-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.back-button {
+    position: absolute; /* Position relative to the container */
+    top: 20px; /* Adjust the top distance as needed */
+    right: 20px; /* Adjust the right distance as needed */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+}
+.back-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+ul {
+    list-style-type: disc; /* Use disc for default bullet points */
+    padding-left: 10px; /* Add some space to the left */
+    margin-bottom: 5px;
+}
+
+#intro {
+    margin-bottom: -25px
+}
+
+
